@@ -1,0 +1,17 @@
+.pagination {
+  margin: -5vh 10vh;
+  list-style: none;
+
+  display: flex;
+  float: right;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #a1a1a1;
+}
+
+li {
+  margin: 2vh;
+}

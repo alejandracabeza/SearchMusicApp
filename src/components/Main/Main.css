@@ -1,0 +1,57 @@
+.eachCard {
+  border-radius: 10px;
+  width: 80%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  border: none;
+  margin: 2vh;
+  transition: transform 0.2s;
+}
+
+.eachCard:hover {
+  transform: scale(1.05);
+}
+
+.cardImg {
+  display: inline;
+  margin: 5vh;
+  width: 15vw;
+}
+
+.cardText {
+  display: inline-grid;
+  position: relative;
+  top: -5vh;
+}
+
+h3 {
+  margin: 0;
+}
+
+.cards-container {
+  position: relative;
+  top: 30vh;
+}
+
+/* NO RESULT PAGE*/
+
+#noresult {
+  width: 100vw;
+  height: 80vh;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
