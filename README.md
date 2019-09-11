@@ -9,12 +9,11 @@
 
 ## Introduction
 
-A web app that allows you to search through ITunes and add album as favourites.
+A web app that allows you to search through ITunes.
 
 ## Technologies
 
 - React.js
-- React Router
 - Context API
 - Itunes API
 
