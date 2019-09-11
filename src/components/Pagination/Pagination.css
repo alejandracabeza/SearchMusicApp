@@ -1,10 +1,13 @@
 .pagination {
   margin: -5vh 10vh;
   list-style: none;
-
+  position: fixed;
+  right: 0;
+  top: 23vh;
   display: flex;
   float: right;
   font-size: 1.5em;
+  z-index: 5;
 }
 
 a {

@@ -9,7 +9,7 @@ export const CardPerPageContext = createContext();
 export const MusicListProvider = props => {
   const [term, setTerm] = useState("");
   const [music, setMusic] = useState([]);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage, setCardsPerPage] = useState(20);
 

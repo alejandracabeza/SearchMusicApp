@@ -1,4 +1,4 @@
-.eachCard {
+.each-card {
   border-radius: 10px;
   width: 80%;
   background: linear-gradient(
@@ -18,17 +18,17 @@
   transition: transform 0.2s;
 }
 
-.eachCard:hover {
+.each-card:hover {
   transform: scale(1.05);
 }
 
-.cardImg {
+.card-img {
   display: inline;
   margin: 5vh;
   width: 15vw;
 }
 
-.cardText {
+.card-text {
   display: inline-grid;
   position: relative;
   top: -5vh;
@@ -45,7 +45,7 @@ h3 {
 
 /* NO RESULT PAGE*/
 
-#noresult {
+#noResult {
   width: 100vw;
   height: 80vh;
   display: table-cell;

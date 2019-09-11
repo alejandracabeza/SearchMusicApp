@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { TermContext, MusicResContext } from "../../MusicContext";
 import axios from "axios";
+import "./SearchBar.css";
 
 const SearchBar = () => {
   let [term, setTerm] = useContext(TermContext);
@@ -30,7 +31,7 @@ const SearchBar = () => {
             type="text"
             value={term}
             name="search"
-            className="searchInput"
+            className="search-input"
             onChange={handleInputChange}
           />
         </label>
