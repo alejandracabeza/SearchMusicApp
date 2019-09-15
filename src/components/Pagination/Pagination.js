@@ -9,7 +9,7 @@ import "./Pagination.css";
 const Pagination = () => {
   let [cardsPerPage] = useContext(CardPerPageContext);
   let [music] = useContext(MusicResContext);
-  let [currentPage, setCurrentPage] = useContext(CurrentPageContext);
+  let [, setCurrentPage] = useContext(CurrentPageContext);
 
   const totalCards = music.length;
   const pageNumbers = [];

@@ -5,7 +5,7 @@ import "./SearchBar.css";
 
 const SearchBar = () => {
   let [term, setTerm] = useContext(TermContext);
-  let [music, setMusic] = useContext(MusicResContext);
+  let [, setMusic] = useContext(MusicResContext);
 
   const handleInputChange = e => {
     setTerm(e.target.value);

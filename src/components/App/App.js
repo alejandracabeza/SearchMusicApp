@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Main from "./components/Main/Main";
-import { MusicListProvider } from "./MusicContext";
-import "./assets/App.css";
+import Navbar from "../Navbar/Navbar.js";
+import Main from "../Main/Main.js";
+import { MusicListProvider } from "../../MusicContext";
+import "./App.css";
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Pagination from "./../Pagination/Pagination";
+import Pagination from "../Pagination/Pagination";
 import "./Main.css";
 
 import {
@@ -19,15 +19,21 @@ const Main = () => {
     textAlign: "center",
     margin: "auto",
     display: "grid",
-    gridTemplateColumns: "repeat(4, 25%)"
-  };
-
-  let styleList = {
-    margin: "auto"
+    gridGap: "10px",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))"
   };
 
   let styleGridCard = {
-    display: "inline-block"
+    display: "flex"
+  };
+
+  let styleList = {
+    margin: "auto",
+    width: "60%"
+  };
+
+  let styleListCard = {
+    flexBasis: "100%"
   };
 
   const indexLastCard = currentPage * cardsPerPage;
@@ -41,7 +47,11 @@ const Main = () => {
         {currentCard.length >= 1 ? (
           currentCard.map(item => {
             return (
-              <div key={item.trackId} className="each-card">
+              <div
+                key={item.trackId}
+                className="each-card"
+                style={!toggle ? styleGridCard : styleListCard}
+              >
                 <a
                   href={item.collectionViewUrl}
                   target="_blank"
@@ -53,10 +63,7 @@ const Main = () => {
                     alt="album art"
                   ></img>
                 </a>
-                <div
-                  className="card-text"
-                  style={!toggle ? styleGridCard : null}
-                >
+                <div className="card-text">
                   <h3>{item.artistName}</h3>
                   <br />
                   <h4>{item.collectionName}</h4>

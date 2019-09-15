@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ToggleContext } from "../../MusicContext";
 
 const Filter = () => {
-  let [toggle, setToggle] = useContext(ToggleContext);
+  let [, setToggle] = useContext(ToggleContext);
   const handleGrid = () => {
     setToggle(true);
   };
